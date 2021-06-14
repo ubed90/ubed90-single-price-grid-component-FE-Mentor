@@ -73,7 +73,7 @@ body {
 .btn-primary {
     color: #fff;
     background: var(--clr-accent);
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 /* ======================
@@ -155,9 +155,4 @@ body {
     .bg-light p {
         line-height: 1.4;
     }
-
-    .btn-primary {
-        margin-top: 2em;
-    }
-
 }
