@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* ======================
+    GENERAL
+=======================*/
+
+:root {
+    --clr-primary: hsl(179, 62%, 43%);
+    --clr-primary-light: hsla(179, 62%, 43% , .8);
+    --clr-accent: hsl(71, 73%, 54%);
+    --clr-bgr: hsl(204, 43%, 93%);
+    --clr-text: hsl(218, 22%, 67%);
+}
+
+
+* , *::before , *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-bgr);
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    color: var(--clr-text);
+    line-height: 1.6;
+}
+
+
+/* ======================
+    TYPOGRAPHY
+=======================*/
+.subtitle {
+    color: var(--clr-accent);
+    font-weight: 700;
+}
+
+.section-title {
+    color: #fff;
+    margin: 0;
+}
+
+.accent-color {
+    color: var(--clr-primary);
+}
+
+.currency {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.opacity {
+    opacity: .6;
+    margin-left: 1em;
+}
+
+/* ======================
+    BUTTON
+=======================*/
+.btn {
+    display: block;
+    font-weight: 700;
+    padding: .7em 0;
+    text-decoration: none;
+    text-align: center;
+    border-radius: .3em;
+    box-shadow: 0 0 2em rgba(0 , 0 , 0 , .2);
+}
+
+.btn-primary {
+    color: #fff;
+    background: var(--clr-accent);
+    margin-top: 1em;
+}
+
+/* ======================
+    CARD
+=======================*/
+
+.card {
+    width: min(85% , 22rem);
+    border-radius: .3em;
+    background: #fff;
+    box-shadow: 0 0 3em rgba(0 , 0 , 0 , .2);
+}
+
+.card-body {
+    padding: 1.5em;
+}
+
+/* ======================
+    bg-dark
+=======================*/
+
+.bg-dark {
+    background: var(--clr-primary);
+    color: #fff;
+}
+
+.bg-dark p {
+    margin: 0;
+}
+
+/* ======================
+    bg-light
+=======================*/
+
+.bg-light {
+    background: var(--clr-primary-light);
+    color: #fff;
+}
+
+.bg-light p {
+    opacity: .8;
+}
+
+/* ======================
+    MEDIA-QUERIES
+=======================*/
+
+@media (min-width: 650px) {
+    .card {
+        width: min(85% , 37.5rem);
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    .card-body {
+        padding: 2em;
+    }
+    
+    .span-2 {
+        grid-column: span 2;
+    }
+
+    .bg-dark {
+        border-radius: 0 0 0 .3em;
+    }
+
+    .bg-light {
+        border-radius: 0 0 .3em 0;
+    }
+
+    .bg-dark .section-title , .bg-light .section-title {
+        font-size: 1.2rem;
+    }
+
+    .bg-light p , .bg-dark p+p {
+        font-size: .9rem;
+    }
+
+    .bg-light p {
+        line-height: 1.4;
+    }
+
+    .btn-primary {
+        margin-top: 2em;
+    }
+
+}
