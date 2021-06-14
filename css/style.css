@@ -124,6 +124,7 @@ body {
 @media (min-width: 650px) {
     .card {
         width: min(85% , 37.5rem);
+        min-width: 37.5rem;
         display: grid;
         grid-template-columns: repeat(2 , 1fr);
     }
