@@ -22,12 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./Screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL ::-](https://github.com/ubed90/ubed90-single-price-grid-component-FE-Mentor)
+- Live Site URL: [Live Site URL ::- ](https://ubed90.github.io/ubed90-single-price-grid-component-FE-Mentor/)
 
 ### Built with
 
